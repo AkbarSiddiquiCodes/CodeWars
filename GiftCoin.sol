@@ -46,8 +46,8 @@ contract GiftCoin {
     if (coins[msg.sender] >= amount) {
     coins[receiver] += amount;
     coins[msg.sender] -= amount; 
-    }
     emit GiftSent(msg.sender, receiver, amount);
+	}
   }
   
   // this function will create new coins and should be reserved for only the owner to call it
